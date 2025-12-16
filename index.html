@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Event Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Outdoor Event Services</h1>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your Vision, Our Foundation</h2>
+            <p>Reliable and professional stage and fencing solutions for your outdoor events.</p>
+        </section>
+
+        <section id="services">
+            <h3>Our Services</h3>
+            <div class="service">
+                <h4>Crowd Control Fencing</h4>
+                <p>Ensure safety and order with our sturdy and reliable crowd control barriers. Perfect for concerts, festivals, and public gatherings.</p>
+            </div>
+            <div class="service">
+                <h4>Stage Setup</h4>
+                <p>Customizable stage setups for any event size. We provide safe, secure, and professional stages for performers and speakers.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Get a Quote via WhatsApp</h3>
+            <form id="enquiryForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contactNumber">WhatsApp Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required placeholder="e.g., +11234567890">
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <fieldset>
+                    <legend>Services Required:</legend>
+                    <label>
+                        <input type="checkbox" name="service" value="Crowd Control Fencing"> Crowd Control Fencing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service" value="Stage Setup"> Stage Setup
+                    </label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
+
+                <button type="submit">Send WhatsApp Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Outdoor Event Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
