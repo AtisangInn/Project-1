@@ -35,6 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // All input elements that should trigger a preview update
     const formInputs = enquiryForm.querySelectorAll('input, textarea');
 
+    // --- Fencing Slider Value Update ---
+    const fencingLengthSlider = document.getElementById('fencingLength');
+    const fencingLengthValue = document.getElementById('fencingLengthValue');
+
+    if (fencingLengthSlider && fencingLengthValue) {
+        // Update the display and the message preview on slider input
+        fencingLengthSlider.addEventListener('input', () => {
+            fencingLengthValue.textContent = fencingLengthSlider.value;
+            // No need to call updateMessagePreview() here because it's already handled
+            // by the generic 'input' event listener on formInputs.
+        });
+    }
+
     // --- Core Function: Update Preview ---
     function updateMessagePreview() {
         // Get values from standard fields

@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="event_services_company_logo.png" alt="Outdoor Event Services Logo" class="logo">
-        <h1>Outdoor Event Services</h1>
+        <h1>Unbounded Holdings</h1>
     </header>
 
     <main>
@@ -64,13 +64,17 @@
                 </fieldset>
 
                 <div id="stageOptions" class="dynamic-options">
-                    <label for="stageDimensions">Stage Dimensions (e.g., 8m x 6m):</label>
-                    <input type="text" id="stageDimensions" name="stageDimensions" placeholder="Enter dimensions">
+                    <label for="stageDimensions">Stage Size:</label>
+                    <select id="stageDimensions" name="stageDimensions">
+                        <option value="4m x 3m">Small (4m x 3m)</option>
+                        <option value="8m x 6m" selected>Medium (8m x 6m)</option>
+                        <option value="12m x 8m">Large (12m x 8m)</option>
+                    </select>
                 </div>
 
                 <div id="fencingOptions" class="dynamic-options">
-                    <label for="fencingLength">Estimated Fencing Length (meters):</label>
-                    <input type="number" id="fencingLength" name="fencingLength" min="1" placeholder="Enter length in meters">
+                    <label for="fencingLength">Estimated Fencing Length (meters): <span id="fencingLengthValue">50</span>m</label>
+                    <input type="range" id="fencingLength" name="fencingLength" min="10" max="500" value="50" step="10">
                 </div>
 
                 <label for="message">Message:</label>
