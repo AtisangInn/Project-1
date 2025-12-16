@@ -28,15 +28,16 @@ header {
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1rem;
     border-bottom: 1px solid var(--medium-gray);
 }
 
 .logo {
-    height: 15%;
-    width:15%;
-    object-fit: contain;
+    max-height: 7rem;
+    width: auto;
+    object-fit:fill;
+    margin-right: 1rem;
 }
 
 header h1 {
