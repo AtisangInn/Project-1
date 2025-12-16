@@ -1,4 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // --- Video Controls ---
+    const video = document.querySelector('.hero-background');
+    const muteButton = document.getElementById('mute-button');
+
+    if (video && muteButton) {
+        // Set initial low volume
+        video.volume = 0.2;
+
+        muteButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                muteButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                muteButton.textContent = 'Unmute';
+            }
+        });
+    }
+
     // --- Element References ---
     const enquiryForm = document.getElementById('enquiryForm');
     const messagePreview = document.querySelector('#messagePreview pre');
@@ -80,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Prevent default submission
 
         // --- Configuration ---
-        const businessWhatsAppNumber = '27762123888';
+        const businessWhatsAppNumber = '27766106766';
 
         // --- Validation ---
         const name = document.getElementById('name').value.trim();
