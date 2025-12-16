@@ -8,24 +8,36 @@
 </head>
 <body>
     <header>
+        <img src="event_services_company_logo.png" alt="Outdoor Event Services Logo" class="logo">
         <h1>Outdoor Event Services</h1>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Your Vision, Our Foundation</h2>
-            <p>Reliable and professional stage and fencing solutions for your outdoor events.</p>
+            <img src="concert_stage_hero_image.png" alt="Professional stage setup" class="hero-background">
+            <div class="hero-content">
+                <h2>Your Vision, <span>Our Foundation</span></h2>
+                <p>Reliable and professional stage and fencing solutions for your outdoor events.</p>
+            </div>
         </section>
 
         <section id="services">
             <h3>Our Services</h3>
-            <div class="service">
-                <h4>Crowd Control Fencing</h4>
-                <p>Ensure safety and order with our sturdy and reliable crowd control barriers. Perfect for concerts, festivals, and public gatherings.</p>
-            </div>
-            <div class="service">
-                <h4>Stage Setup</h4>
-                <p>Customizable stage setups for any event size. We provide safe, secure, and professional stages for performers and speakers.</p>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="crowd_control_fencing_image.png" alt="Crowd Control Fencing" class="service-image">
+                    <div class="service-content">
+                        <h4>Crowd Control Fencing</h4>
+                        <p>Ensure safety and order with our sturdy and reliable crowd control barriers. Perfect for concerts, festivals, and public gatherings.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="stage_setup_service_image.png" alt="Stage Setup" class="service-image">
+                    <div class="service-content">
+                        <h4>Stage Setup</h4>
+                        <p>Customizable stage setups for any event size. We provide safe, secure, and professional stages for performers and speakers.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -33,7 +45,7 @@
             <h3>Get a Quote via WhatsApp</h3>
             <form id="enquiryForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
 
                 <label for="contactNumber">WhatsApp Number:</label>
                 <input type="tel" id="contactNumber" name="contactNumber" required placeholder="e.g., +11234567890">
@@ -51,29 +63,25 @@
                     </label>
                 </fieldset>
 
-                <!-- Dynamic Fields: Hidden by default -->
                 <div id="stageOptions" class="dynamic-options">
                     <label for="stageDimensions">Stage Dimensions (e.g., 8m x 6m):</label>
-                    <input type="text" id="stageDimensions" name="stageDimensions">
+                    <input type="text" id="stageDimensions" name="stageDimensions" placeholder="Enter dimensions">
                 </div>
 
                 <div id="fencingOptions" class="dynamic-options">
                     <label for="fencingLength">Estimated Fencing Length (meters):</label>
-                    <input type="number" id="fencingLength" name="fencingLength" min="1">
+                    <input type="number" id="fencingLength" name="fencingLength" min="1" placeholder="Enter length in meters">
                 </div>
-                <!-- End Dynamic Fields -->
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
 
-                <!-- Live Preview -->
                 <div id="previewSection">
                     <h4>WhatsApp Message Preview:</h4>
                     <div id="messagePreview" class="preview-box">
                         <pre>Your message will appear here...</pre>
                     </div>
                 </div>
-                <!-- End Live Preview -->
 
                 <button type="submit">Send WhatsApp Enquiry</button>
             </form>
