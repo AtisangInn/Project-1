@@ -48,8 +48,6 @@ header h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    flex-grow: 1;
-    text-align: center;
 }
 
 main {
