@@ -51,8 +51,29 @@
                     </label>
                 </fieldset>
 
+                <!-- Dynamic Fields: Hidden by default -->
+                <div id="stageOptions" class="dynamic-options">
+                    <label for="stageDimensions">Stage Dimensions (e.g., 8m x 6m):</label>
+                    <input type="text" id="stageDimensions" name="stageDimensions">
+                </div>
+
+                <div id="fencingOptions" class="dynamic-options">
+                    <label for="fencingLength">Estimated Fencing Length (meters):</label>
+                    <input type="number" id="fencingLength" name="fencingLength" min="1">
+                </div>
+                <!-- End Dynamic Fields -->
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
+
+                <!-- Live Preview -->
+                <div id="previewSection">
+                    <h4>WhatsApp Message Preview:</h4>
+                    <div id="messagePreview" class="preview-box">
+                        <pre>Your message will appear here...</pre>
+                    </div>
+                </div>
+                <!-- End Live Preview -->
 
                 <button type="submit">Send WhatsApp Enquiry</button>
             </form>
