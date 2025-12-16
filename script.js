@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // --- Message Construction ---
-        let enquiryMessage = `*New Outdoor Event Enquiry*\n\n`;
+        let enquiryMessage = `*New Unbounded Event Enquiry*\n\n`;
         enquiryMessage += `*Name:* ${name}\n`;
         enquiryMessage += `*Contact Number:* ${contactNumber}\n`;
         enquiryMessage += `*Event Date:* ${eventDate}\n`;
