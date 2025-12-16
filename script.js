@@ -51,6 +51,7 @@ ${message}
 
             // --- Redirect ---
             window.open(whatsappUrl, '_blank');
+            enquiryForm.reset();
         });
     }
 });
